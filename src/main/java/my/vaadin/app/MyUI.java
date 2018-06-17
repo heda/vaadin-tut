@@ -81,6 +81,7 @@ public class MyUI extends UI {
 
         setContent(layout);
         
+        // add listener to grid selection
         grid.asSingleSelect().addValueChangeListener(event -> {
             if (event.getValue() == null) {
                 form.setVisible(false);
